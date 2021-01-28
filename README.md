@@ -57,7 +57,7 @@ You will need the speedtest-cli library installed to use this - [Found Here](htt
 2. Make a directory to hold the config.ini file. Navigate to that directory and download the sample config.ini in this repo.
 ```bash
 mkdir speedtest
-curl -o speedtest/config.ini https://raw.githubusercontent.com/barrycarey/Speedtest-for-InfluxDB-and-Grafana/master/config.ini
+curl -o speedtest/config.ini https://raw.githubusercontent.com/logandzwon/Speedtest-for-InfluxDB-and-Grafana/master/config.ini
 cd speedtest
 ```
 
@@ -78,10 +78,10 @@ docker run -d \
 --name="speedtest" \
 -v config.ini:/src/config.ini \
 --restart="always" \
-barrycarey/speedtest-for-influxdb-and-grafana
+logandzwon/speedtest-for-influxdb-and-grafana
 ```
  2. The docker-compose option
  ```bash
- curl -O https://raw.githubusercontent.com/barrycarey/Speedtest-for-InfluxDB-and-Grafana/master/docker-compose.yml docker-compose.yml
+ curl -O https://raw.githubusercontent.com/logandzwon/Speedtest-for-InfluxDB-and-Grafana/master/docker-compose.yml docker-compose.yml
  docker-compose up -d
  ```
